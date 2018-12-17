@@ -2097,6 +2097,7 @@ declare namespace _ {
         <T extends object, TResult>(iteratee: (value: T[keyof T]) => TResult): LodashMap3x1<T, TResult>;
         <T extends object>(iteratee: lodash.__, collection: T | null | undefined): LodashMap3x2<T>;
         <T extends object, TResult>(iteratee: (value: T[keyof T]) => TResult, collection: T | null | undefined): TResult[];
+        <T extends object, TResult>(iteratee: lodash.ObjectIterator<T, TResult>, collection: T | null | undefined): TResult[];
         <T, K extends keyof T>(iteratee: K): LodashMap4x1<T, K>;
         <T>(iteratee: lodash.__, collection: lodash.List<T> | lodash.Dictionary<T> | lodash.NumericDictionary<T> | null | undefined): LodashMap4x2<T>;
         <T, K extends keyof T>(iteratee: K, collection: lodash.List<T> | lodash.Dictionary<T> | lodash.NumericDictionary<T> | null | undefined): Array<T[K]>;
